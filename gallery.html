@@ -1,6 +1,7 @@
 <!doctype html>
 <html lang="en">
-  <head>
+
+<head>
     <title>Ahmad: A New Beginning</title>
     <!-- Required meta tags -->
     <meta charset="utf-8">
@@ -10,63 +11,245 @@
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <script src="js/jquery-1.7.1.min.js"></script>
+    <script src="bootstrap/js/bootstrap.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
-  </head>
-  <body>
+</head>
+
+<body>
 
     <nav class="navbar navbar-default">
         <div class="container-fluid">
             <div class="navbar-header">
-              <a class="navbar-brand" href="#">Ahmad: More Than An Artist</a>
+                <a class="navbar-brand" href="#">Ahmad: More Than An Artist</a>
             </div>
             <ul class="nav navbar-nav">
-              <li class="active"><a href="#">Home</a></li>
-              <li><a href="gallery.html">Gallery</a></li>
-              <li><a href="aboutartist.html">About the Artist</a></li>
-              <li><a href="purchaseinfo.html">Purchase Info</a></li>
+                <li><a href="AhmadArts.html">Home</a></li>
+                <li class="active"><a href="#">Gallery</a></li>
+                <li><a href="aboutartist.html">About the Artist</a></li>
+                <li><a href="purchaseinfo.html">Purchase Info</a></li>
             </ul>
-          </div>
-        </nav>
+        </div>
+    </nav>
 
     <!--Carousel-->
-    <div id="myCarousel" class="carousel-slide" data-ride="carousel">
-        <!-- Wrapper for slides -->
-            <div class="carousel-inner">
-                <div class="item active">
-                    <img src="Images/IMG_0279.JPG" alt="Los Angeles" >
-                    <div class="carousel-caption">
-                        <h3>Ahmad</h3>
-                        <p>More than an Artist</p>
-                    </div>
-                </div>
-            
-                <div class="item">
-                    <img src="Images/IMG_0411.JPG" alt="Chicago" >
-                    <div class="carousel-caption">
-                        <h3>Ahmad</h3>
-                        <p>More than an Artist</p>
-                    </div>
-                </div>
-            
-                <div class="item">
-                    <img src="Images/IMG_0490.JPG" alt="New York" >
-                    <div class="carousel-caption">
-                        <h3>Ahmad</h3>
-                        <p>More than an Artist</p>
-                    </div>
-                </div>
-            </div>
-    </div>
+    <!-- Top content -->
+    <div class="container">
+        <div class="row">
+            <div class="col-xs-12">
+                <div class="carousel slide" id="carousel-example" data-ride="carousel" data-pause="hover"
+                    data-wrap="true" data-interval="2500">
 
+                    <ol class="carousel-indicators">
+                        <li data-target="#imageCarousel" data-slide-to="0" class="active"></li>
+                        <li data-target="#imageCarousel" data-slide-to="1"></li>
+                        <li data-target="#imageCarousel" data-slide-to="2"></li>
+                    </ol>
+
+                    <div class="carousel-inner">
+                        <div class="item active">
+                            <div class="row">
+                                <div class="col-xs-4">
+                                    <img src="Images/IMG_0279.JPG" class="img-responsive">
+                                    <div class="carousel-caption">
+                                        <h3>Some Text</h3>
+                                        <p>Some Price</p>
+                                    </div>
+                                </div>
+                                <div class="col-xs-4">
+                                    <img src="Images/IMG_0411.JPG" class="img-responsive">
+                                    <div class="carousel-caption">
+                                        <h3>Some Text</h3>
+                                        <p>Some Price</p>
+                                    </div>
+                                </div>
+                                <div class="col-xs-4">
+                                    <img src="Images/IMG_0429.JPG" class="img-responsive">
+                                    <div class="carousel-caption">
+                                        <h3>Some Text</h3>
+                                        <p>Some Price</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="item">
+                            <div class="row">
+                                <div class="col-xs-4">
+                                    <img src="Images/IMG_0490.JPG" class="img-responsive">
+                                    <div class="carousel-caption">
+                                        <h3>Some Text</h3>
+                                        <p>Some Price</p>
+                                    </div>
+                                </div>
+                                <div class="col-xs-4">
+                                    <img src="Images/IMG_0494.JPG" class="img-responsive">
+                                    <div class="carousel-caption">
+                                        <h3>Some Text</h3>
+                                        <p>Some Price</p>
+                                    </div>
+                                </div>
+                                <div class="col-xs-4">
+                                    <img src="Images/IMG_0497.JPG" class="img-responsive">
+                                    <div class="carousel-caption">
+                                        <h3>Some Text</h3>
+                                        <p>Some Price</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="item">
+                            <div class="row">
+                                <div class="col-xs-4">
+                                    <img src="Images/IMG_0507.JPG" class="img-responsive">
+                                    <div class="carousel-caption">
+                                        <h3>Some Text</h3>
+                                        <p>Some Price</p>
+                                    </div>
+                                </div>
+                                <div class="col-xs-4">
+                                    <img src="Images/IMG_0510.JPG" class="img-responsive">
+                                    <div class="carousel-caption">
+                                        <h3>Some Text</h3>
+                                        <p>Some Price</p>
+                                    </div>
+                                </div>
+                                <div class="col-xs-4">
+                                    <img src="Images/IMG_0515.JPG" class="img-responsive">
+                                    <div class="carousel-caption">
+                                        <h3>Some Text</h3>
+                                        <p>Some Price</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="item">
+                            <div class="row">
+                                <div class="col-xs-4">
+                                    <img src="Images/IMG_0520.JPG" class="img-responsive">
+                                    <div class="carousel-caption">
+                                        <h3>Some Text</h3>
+                                        <p>Some Price</p>
+                                    </div>
+                                </div>
+                                <div class="col-xs-4">
+                                    <img src="Images/IMG_0521.JPG" class="img-responsive">
+                                    <div class="carousel-caption">
+                                        <h3>Some Text</h3>
+                                        <p>Some Price</p>
+                                    </div>
+                                </div>
+                                <div class="col-xs-4">
+                                    <img src="Images/IMG_0528.JPG" class="img-responsive">
+                                    <div class="carousel-caption">
+                                        <h3>Some Text</h3>
+                                        <p>Some Price</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="item">
+                            <div class="row">
+                                <div class="col-xs-4">
+                                    <img src="Images/IMG_0531.JPG" class="img-responsive">
+                                    <div class="carousel-caption">
+                                        <h3>Some Text</h3>
+                                        <p>Some Price</p>
+                                    </div>
+                                </div>
+                                <div class="col-xs-4">
+                                    <img src="Images/IMG_0562.JPG" class="img-responsive">
+                                    <div class="carousel-caption">
+                                        <h3>Some Text</h3>
+                                        <p>Some Price</p>
+                                    </div>
+                                </div>
+                                <div class="col-xs-4">
+                                    <img src="Images/IMG_0947.JPG" class="img-responsive">
+                                    <div class="carousel-caption">
+                                        <h3>Some Text</h3>
+                                        <p>Some Price</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="item">
+                            <div class="row">
+                                <div class="col-xs-4">
+                                    <img src="Images/IMG_1064.JPG" class="img-responsive">
+                                    <div class="carousel-caption">
+                                        <h3>Some Text</h3>
+                                        <p>Some Price</p>
+                                    </div>
+                                </div>
+                                <div class="col-xs-4">
+                                    <img src="Images/IMG_1134.JPG" class="img-responsive">
+                                    <div class="carousel-caption">
+                                        <h3>Some Text</h3>
+                                        <p>Some Price</p>
+                                    </div>
+                                </div>
+                                <div class="col-xs-4">
+                                    <img src="Images/IMG_1247.jpeg" class="img-responsive">
+                                    <div class="carousel-caption">
+                                        <h3>Some Text</h3>
+                                        <p>Some Price</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="item">
+                            <div class="row">
+                                <div class="col-xs-4">
+                                    <img src="Images/IMG_1286.jpeg" class="img-responsive">
+                                    <div class="carousel-caption">
+                                        <h3>Some Text</h3>
+                                        <p>Some Price</p>
+                                    </div>
+                                </div>
+                                <div class="col-xs-4">
+                                    <img src="Images/IMG_1391.jpeg" class="img-responsive">
+                                    <div class="carousel-caption">
+                                        <h3>Some Text</h3>
+                                        <p>Some Price</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <a href="#imageCarousel" class="carousel-control left" data-slide="prev">
+                    <span class="glyphicon glyphicon-chevron-left"></span>
+                </a>
+                <a href="#imageCarousel" class="carousel-control right" data-slide="next">
+                    <span class="glyphicon glyphicon-chevron-right"></span>
+                </a>
+
+            </div>
+        </div>
         <!--Copyright Information-->
         <div class="footer">
             <footer>&copy; Copyright 2021. Website designed and developed by Cameron Carr</footer>
-    
+
         </div>
-    <!-- Optional JavaScript -->
-    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
-  </body>
+        <!-- Optional JavaScript -->
+        <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+        <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+            integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+            crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+            integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+            crossorigin="anonymous"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+            integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+            crossorigin="anonymous"></script>
+</body>
+
 </html>
