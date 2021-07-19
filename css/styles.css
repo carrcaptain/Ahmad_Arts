@@ -31,47 +31,68 @@
                          ID/Class should've been used. 
                          For a small demo 
                          it's okaish for now */
-    animation: showup;
+    animation: showup 7s infinite;
     animation-iteration-count: 1;
     animation-duration: infinite;
   }
-  
-  .logoSubHead {
-    width: 0px;
-    animation: reveal 7s;
-    animation-iteration-count: 1;
-    animation-duration: infinite;
+
+  .more, .than, .an, .Artist {
+    display: inline-block;
+    text-align: center;
+    color: rgb(167, 8, 8);
   }
   
-  .logoSubHead span {
-    margin-left:-355px;
-    animation: slidein 7s;
-    animation-iteration-count: 1;
-    animation-duration: infinite;
+  .More {
+    animation: slideMore 0.7s ease-in-out;
+    animation-direction: normal;
+    animation-fill-mode: forwards;
+  }
+
+  .than {
+    animation: slideInthan 2s ease-in-out;
+    animation-delay: 1s;
+    animation-fill-mode: forwards;
+  }
+
+  .an {
+    animation: slideInan 2s ease-in-out;
+    animation-delay: 1s;
+    animation-fill-mode: forwards;
+  }
+
+  .Artist {
+    animation: slideInArtist 2s ease-in;
+    animation-direction: reverse;
+    animation-delay: 1s;
+    animation-fill-mode: forwards;
   }
   
   @keyframes showup {
       0% {opacity:0;}
       20% {opacity:1;}
       80% {opacity:1;}
-      100% {opacity:0;}
+      100% {opacity:1;}
+  }
+
+  @keyframes slideMore {
+      0% {opacity:0; transform: translateX(-500px);}
+      100% {opacity:1;}
   }
   
-  @keyframes slidein {
-      0% { margin-left:-800px; }
-      20% { margin-left:-800px; }
-      35% { margin-left:0px; }
-      100% { margin-left:0px; }
+  @keyframes slideInthan {
+    0% {opacity:0; transform: translateY(-500px)}
+    100% {opacity:1;}
   }
-  
-  @keyframes reveal {
-      0% {opacity:0;width:0px;}
-      20% {opacity:1;width:0px;}
-      30% {width:355px;}
-      80% {opacity:1;}
-      100% {opacity:0;width:355px;}
+
+  @keyframes slideInan {
+      0% {opacity:0; transform: translateY(500px);}
+      100% {opacity:1;}
   }
-  
+
+  @keyframes slideInArtist {
+      0% {opacity:1; }
+      100% {opacity:0; transform: translateX(-500px);}
+  }
   
   p {
     font-size:12px;
