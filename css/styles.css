@@ -1,12 +1,83 @@
 @import url('https://fonts.googleapis.com/css2?family=Lobster&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Roboto:300');
 
-body {
-    background-image: url("Images/Ahmad\ logo.PNG");
-    background-repeat: no-repeat;
-    background-position: center;
-    background-attachment: fixed;
-    background-size: cover;
-}
+/* Home Page Animation */
+.brand {
+    text-align:center;
+    background:black;
+    color:rgb(167, 8, 8);
+    font-family:'Roboto';
+    font-weight:300;
+    font-size:32px;
+    padding-top:40vh;
+    height:100vh;
+    overflow:hidden;
+    -webkit-backface-visibility: hidden;
+    -webkit-perspective: 1000;
+    -webkit-transform: translate3d(0,0,0);
+  }
+  
+  body {
+      background-color: black;
+  }
+
+  .logoHead {
+    display:inline-block;
+    overflow:hidden;
+    white-space:nowrap;
+  }
+  
+  .logoHead {    /* For increasing performance 
+                         ID/Class should've been used. 
+                         For a small demo 
+                         it's okaish for now */
+    animation: showup;
+    animation-iteration-count: 1;
+    animation-duration: infinite;
+  }
+  
+  .logoSubHead {
+    width: 0px;
+    animation: reveal 7s;
+    animation-iteration-count: 1;
+    animation-duration: infinite;
+  }
+  
+  .logoSubHead span {
+    margin-left:-355px;
+    animation: slidein 7s;
+    animation-iteration-count: 1;
+    animation-duration: infinite;
+  }
+  
+  @keyframes showup {
+      0% {opacity:0;}
+      20% {opacity:1;}
+      80% {opacity:1;}
+      100% {opacity:0;}
+  }
+  
+  @keyframes slidein {
+      0% { margin-left:-800px; }
+      20% { margin-left:-800px; }
+      35% { margin-left:0px; }
+      100% { margin-left:0px; }
+  }
+  
+  @keyframes reveal {
+      0% {opacity:0;width:0px;}
+      20% {opacity:1;width:0px;}
+      30% {width:355px;}
+      80% {opacity:1;}
+      100% {opacity:0;width:355px;}
+  }
+  
+  
+  p {
+    font-size:12px;
+    color:#999;
+    margin-top:200px;
+  }
 
 a {
     font-family: 'Lobster', sans-serif;
@@ -16,4 +87,86 @@ a {
     text-decoration: none;
 }
 
+.navbar nav {
+    float: right;
+}
 
+.carousel-title {
+    margin-left: 20px;
+}
+
+.carousel-inner {
+    background-color: black;
+    padding-left: 20px;
+    padding-top: 20px;
+    padding-right: 20px;
+    padding-bottom: 20px;
+}
+
+.img-responsive {
+    margin-top: auto;
+    margin-bottom: auto;
+    align-items: center;
+}
+
+.footer {
+    color: blue;
+}
+
+/* The Modal (background) */
+.modal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    padding-top: 100px; /* Location of the box */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.9); /* Black w/ opacity */
+  }
+  
+  /* Modal Content (image) */
+  .modal-content {
+    margin: auto;
+    display: block;
+    width: 80%;
+    max-width: 700px;
+  }
+
+/* Add Animation */
+.modal-content, #caption {  
+    animation-name: zoom;
+    animation-duration: 0.6s;
+  }
+  
+  @keyframes zoom {
+    from {transform: scale(0.1)} 
+    to {transform: scale(1)}
+  }
+
+/* The Close Button */
+.close {
+    position: absolute;
+    top: 15px;
+    right: 35px;
+    color: #f1f1f1;
+    font-size: 40px;
+    font-weight: bold;
+    transition: 0.3s;
+  }
+  
+  .close:hover,
+  .close:focus {
+    color: #bbb;
+    text-decoration: none;
+    cursor: pointer;
+  }
+
+@media only screen and (max-width: 700px){
+    .modal-content {
+      width: 100%;
+    }
+  }
